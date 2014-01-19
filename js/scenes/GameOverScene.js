@@ -16,10 +16,10 @@ var GameOverScene = enchant.Class.create(enchant.Scene, {
 
         // On click: Start the game
         var titlescene = new TitleScene();
-        gameoverimg.on("touchstart", function (){
-            game.replaceScene(titlescene);
-            game.assets['sounds/johnson-long-version.mp3'].stop();
-        });
+//        gameoverimg.on("touchstart", function (){
+//            game.replaceScene(titlescene);
+//            game.assets['sounds/johnson-long-version.mp3'].stop();
+//        });
         this.addChild(gameoverimg);
 
         game.assets['sounds/johnson-long-version.mp3'].play();

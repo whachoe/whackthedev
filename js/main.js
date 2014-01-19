@@ -8,13 +8,13 @@ window.onload = function() {
     game = new Game(320,320);
     game.score = 0;
     game.maxDries = 30;
-    game.totalDries = 16;
+    game.totalDries = 10;
 
     // Image assets
     game.preload('img/icon0.png', 'img/a-32.png', 'img/effect0.png', 'img/game-over.jpg', 'img/start.png', 'img/driesuitgat.png');
 
     // Sound assets
-    game.preload('sounds/johnson-long-version.mp3');
+    game.preload('sounds/johnson-long-version.mp3', 'sounds/foemp.wav');
 
     // Styling
     game.fps = 15;

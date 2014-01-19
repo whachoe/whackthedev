@@ -35,7 +35,7 @@ var Hole = enchant.Class.create(enchant.Sprite,{
                     this.waitFor = game.frame+rand(100);
                     this.currentlyWhacked = false;
 
-                    //Reduce maximum amount of Driess
+                    //Reduce maximum amount of Dries
                     game.maxDries--;
                     //If the amount is exceeded the Dries should not appear
                     if(game.maxDries<=0) {
@@ -63,6 +63,7 @@ var Hole = enchant.Class.create(enchant.Sprite,{
         //only when Dev has appeared at least half-way
         if(this.frame>=2) {
             this.currentlyWhacked = true;
+            game.assets['sounds/foemp.wav'].play();
 
             //Dries after being whacked
             this.frame=5;
